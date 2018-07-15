@@ -3,16 +3,16 @@ from __future__ import print_function
 import piplates.RELAYplate as RELAY
 import time
 
-ppADDR=0
-RELAY.RESET(ppADDR)
+ppADDR=0 #Relay Plate Address
+RELAY.RESET(ppADDR) #Reset Relay Plate IOs
 
 vs = 0.00304
 vo = -.0109
-volt = 13.95
-pump_windage2 = 14.0/16.0
+volt = 13.95 #Voltage of Peristaltic Pump
+pump_windage2 = 14.0/16.0 #Estimated Ratio to adjust pump calibration
 
 ozs = raw_input("Enter oz to put out: ")
-oz = float(ozs)
+oz = float(ozs) #Establishes raw input as number?
 maxtime = float(raw_input("Enter time betwen nutrient doses: "))
 
 print ("oz is: ", oz)
